@@ -119,7 +119,7 @@ function showResultBox(){
     let circularProgress= document.querySelector('.circular-progress');
     let progressValue=document.querySelector('.progress-value');
     let progressStartValue=-1;
-    let progressEndValue=(userScore/questions.length)*100;
+    let progressEndValue=Math.floor(userScore/questions.length)*100;
     let speed=20;
     let progress=setInterval(()=>{
             progressStartValue++;
